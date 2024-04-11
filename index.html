@@ -5,22 +5,36 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <link rel="stylesheet" href="styles.css" />
-    <!-- <script type="module" src="script.js"></script> -->
-    <script src="lesson.js" defer></script>
+    <script type="module" src="script.js"></script>
+   <!-- <script src="lesson.js" defer></script> -->
   </head>
   <body>
     <!--
       - Et sted å skrive inn et tall
-      - Et sted å velge konventerings metode
+      - Et sted å velge konvertering metode
       - En knapp om aktiverer
       - Et sted som viser resultat
     -->
 
     <form>
       <input id="inputValue" type="text">
+
+      <label for="fromValue">Konverter fra</label>
+      <select name="fromValue" id="fromValue">
+        <option value="CM">CM</option>
+        <option value="M">M</option>
+        <option value="KM">KM</option>
+      </select>
+
+      <label for="toValue">Konverter til</label>
+      <select name="toValue" id="toValue">
+        <option value="CM">CM</option>
+        <option value="M">M</option>
+        <option value="KM">KM</option>
+      </select>
     </form>
 
-    <button id="submitValue">Konventer</button>
+    <button id="submitValue">Konverter</button>
 
     <p id="displayValue"></p>
   </body>
