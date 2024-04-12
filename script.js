@@ -1,3 +1,16 @@
+/*
+Alternativ måte å skrive opp kommentarer for å sette ut hvert steg for forståelse:
+
+const er erklært variabel
+submitValue er variabel navn
+= er en erklæring
+document er HTML dokumentet
+.querySelector() er hva skal jeg hente
+#submitValue er spesifikt hva jeg vil ha
+console viser til inspect tool
+ .log viser til at noe skal logges ut
+*/
+
 // Variabel som lagrer at vi henter et element fra HTML på navnet submitValue
 const submitValue = document.querySelector("#submitValue");
 console.log(submitValue);
@@ -56,5 +69,5 @@ submitValue.addEventListener("click", () => {
 
       // Vi setter tekst innholdet til displayValue til å være verdien som kommer fra regnestykkene vi gjorde i if/else og viser resultat.
     displayValue.textContent = result;
-
+    console.log(result)
 });
